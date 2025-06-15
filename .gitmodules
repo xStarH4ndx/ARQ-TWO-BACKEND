@@ -7,3 +7,6 @@
 [submodule "Apigateway"]
 	path = Apigateway
 	url = https://github.com/xStarH4ndx/ARQ-TWO-APIGATEWAY.git
+[submodule "msUsers"]
+	path = msUsers
+	url = https://github.com/xStarH4ndx/ARQ-TWO-MS-USER.git
