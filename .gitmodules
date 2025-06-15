@@ -1,0 +1,9 @@
+[submodule "msInventory"]
+	path = msInventory
+	url = https://github.com/xStarH4ndx/ARQ-TWO-MS-INVENTORY.git
+[submodule "msPayments"]
+	path = msPayments
+	url = https://github.com/xStarH4ndx/ARQ-TWO-MS-PAYMENTS.git
+[submodule "Apigateway"]
+	path = Apigateway
+	url = https://github.com/xStarH4ndx/ARQ-TWO-APIGATEWAY.git
