@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: apigateway
+  name: apigateway
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: apigateway
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: apigateway
+    spec:
+      containers:
+      - image: api-gateway-app
+        name: api-gateway-app
+        imagePullPolicy: Never
+        command: ["npm"]
+        args: ["run", "start:dev"]
+        resources: {}
+status: {}

@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: ms-payments
+  name: ms-payments
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ms-payments
+  template:
+    metadata:
+      labels:
+        app: ms-payments
+    spec:
+      containers:
+        - name: ms-payments-app
+          image: ms-payments-app
+          imagePullPolicy: Never
+          env:
+            - name: MONGODB_URI
+              value: mongodb://my-mongodb:27017/db-payments
+            - name: RABBITMQ_HOST
+              value: my-rabbitmq
+            - name: RABBITMQ_PORT
+              value: "5672"
+            - name: RABBITMQ_USER
+              value: user
+            - name: RABBITMQ_PASS
+              value: l79kwavQdcz2Fv75

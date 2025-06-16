@@ -1,0 +1,5 @@
+msInventory:
+  # ... otras configuraciones de ms-inventory ...
+  mongoDbUri: "mongodb://root:Ir4wPXkmcC@my-mongodb:27017/db-inventory"
+  # ^^^ La contraseña ya está aquí.
+  #     El nombre de la base de datos es 'db-inventory', como lo tenías.

@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: ms-users
+  name: ms-users
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ms-users
+  template:
+    metadata:
+      labels:
+        app: ms-users
+    spec:
+      containers:
+      - name: ms-user-app
+        image: ms-user-app
+        imagePullPolicy: Never
+        command: ["npm"]
+        args: ["run", "start:dev"]
+        env:
+        - name: MONGODB_URI
+          value: "mongodb://my-mongodb:27017/db-users"
+        - name: JWT_SECRET
+          value: "clave-secreta"
+        - name: JWT_EXPIRES_IN
+          value: "24h"
+        - name: RABBITMQ_URL
+          value: "amqp://user:l79kwavQdcz2Fv75@my-rabbitmq:5672"
+        - name: RABBITMQ_QUEUE
+          value: "cuotaPago.queue"
+        resources: {}
