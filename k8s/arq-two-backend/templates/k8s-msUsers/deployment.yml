@@ -22,13 +22,13 @@ spec:
         args: ["run", "start:dev"]
         env:
         - name: MONGODB_URI
-          value: "mongodb://my-mongodb:27017/db-users"
+          value: "mongodb://mongodb:27017/db-users"
         - name: JWT_SECRET
           value: "clave-secreta"
         - name: JWT_EXPIRES_IN
           value: "24h"
         - name: RABBITMQ_URL
-          value: "amqp://user:l79kwavQdcz2Fv75@my-rabbitmq:5672"
+          value: "amqp://rabbitmq:5672"
         - name: RABBITMQ_QUEUE
           value: "cuotaPago.queue"
         resources: {}

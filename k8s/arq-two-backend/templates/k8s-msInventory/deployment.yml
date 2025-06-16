@@ -20,13 +20,13 @@ spec:
           imagePullPolicy: Never
           env:
           - name: MONGODB_URI
-            value: mongodb://my-mongodb:27017/db-inventory
+            value: mongodb://mongodb:27017/db-inventory
           - name: RABBITMQ_HOST
-            value: my-rabbitmq
+            value: rabbitmq
           - name: RABBITMQ_PORT
             value: "5672"
           - name: RABBITMQ_USER
-            value: user
+            value: guest
           - name: RABBITMQ_PASS
-            value: l79kwavQdcz2Fv75
+            value: guest
 
