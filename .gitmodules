@@ -10,3 +10,6 @@
 [submodule "msUsers"]
 	path = msUsers
 	url = https://github.com/xStarH4ndx/ARQ-TWO-MS-USER.git
+[submodule "k8s/arq-two-backend/arqFront"]
+	path = k8s/arq-two-backend/arqFront
+	url = https://github.com/xStarH4ndx/ARQ-TWO-FRONT.git
