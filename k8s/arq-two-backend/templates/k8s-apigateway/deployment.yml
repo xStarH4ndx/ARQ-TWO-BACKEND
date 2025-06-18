@@ -18,8 +18,8 @@ spec:
         app: apigateway
     spec:
       containers:
-      - image: api-gateway-app
-        name: api-gateway-app
+      - image: ms-apigateway-app
+        name: ms-apigateway-app
         imagePullPolicy: Never
         command: ["npm"]
         args: ["run", "start:dev"]

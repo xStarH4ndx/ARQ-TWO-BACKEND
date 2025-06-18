@@ -15,8 +15,8 @@ spec:
         app: ms-users
     spec:
       containers:
-      - name: ms-user-app
-        image: ms-user-app
+      - name: ms-users-app
+        image: ms-users-app
         imagePullPolicy: Never
         command: ["npm"]
         args: ["run", "start:dev"]
