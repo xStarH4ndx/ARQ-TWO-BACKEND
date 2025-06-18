@@ -18,14 +18,3 @@ spec:
         - name: ms-payments-app
           image: ms-payments-app
           imagePullPolicy: Never
-          env:
-            - name: MONGODB_URI
-              value: mongodb://mongodb:27017/db-payments
-            - name: RABBITMQ_HOST
-              value: rabbitmq
-            - name: RABBITMQ_PORT
-              value: "5672"
-            - name: RABBITMQ_USER
-              value: guest
-            - name: RABBITMQ_PASS
-              value: guest
