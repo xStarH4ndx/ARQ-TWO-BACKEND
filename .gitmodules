@@ -13,3 +13,6 @@
 [submodule "k8s/arq-two-backend/arqFront"]
 	path = k8s/arq-two-backend/arqFront
 	url = https://github.com/xStarH4ndx/ARQ-TWO-FRONT.git
+[submodule "arqFront"]
+	path = arqFront
+	url = https://github.com/xStarH4ndx/ARQ-TWO-FRONT.git
